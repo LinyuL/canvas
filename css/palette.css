@@ -1,0 +1,198 @@
+body{
+	margin: 0;
+	padding:0;
+	list-style: none;
+}
+body,html{
+	width:100%;
+	height:100%;
+	background:#ccc;
+}
+*{
+	box-sizing:border-box;
+}
+body{
+	background: url(../1.jpg);
+	background-position: center center;
+	background-size: cover;
+}
+.palette-box{
+	margin-left: 120px;
+	height:100%;
+}
+.tools{
+	width:120px;
+	height:100%;
+	margin-left:-120px;
+	border: 2px solid #999;
+    background: #fff;
+    padding: 2px;
+    float: left;
+}
+.head{
+	width:100%;
+	height:30px;
+	background: #4C4C4C;
+	text-align: center;
+	line-height: 30px;
+	color:#fff;
+}
+.canvas-box{
+	width:100%;
+	height:100%;
+	position: relative;
+	float: left;
+	border: 2px solid #999;
+	border-left: 0;
+	padding: 2px 2px 2px 6px;
+	overflow: hidden;
+
+}
+.canvas-box canvas{
+	box-shadow: 0 0 10px #1D1019;
+}
+#can{
+	background: #fff;
+}
+.copy{
+	min-width:300px;
+	min-height:150px;
+	border: 1px solid rgba(0,0,0,0);
+	position: absolute;
+	left: 6px;
+	top:2px;
+}
+.main{
+	width:100%;
+	height:34px;
+	margin:2px 0 4px;
+	padding-bottom: 6px;
+	border-bottom:1px solid #4C4C4C;
+}
+.main div{
+	width:33.3333%;
+	height:100%;
+	float: left;
+	line-height: 26px;
+	text-align: center;
+	font-size: 20px;
+	cursor: pointer;	
+}
+.main div:hover{
+	background: #4C4C4C;	
+	border: 1px solid #4c4c4c;
+	border-radius: 8px;
+	color:#fff;
+	line-height: 24px;
+}
+
+/*形状*/
+.shape{
+	width:100%;
+	height:auto;
+	overflow: hidden;
+	margin:2px 0 4px;
+	padding-bottom: 6px;
+	border-bottom:1px solid #4C4C4C;
+}
+.shape div{
+	width:33.333%;
+	height:30px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 20px;
+	float: left;
+	margin: 2px 9px 4px;
+	cursor: pointer;	
+}
+.shape div:hover{
+	background: #4C4C4C;	
+	border: 1px solid #4c4c4c;
+	border-radius: 8px;
+	color:#fff;
+	line-height: 27px;
+}
+
+/*线宽*/
+.biankuang{
+	width:100%;
+	height:auto;
+	overflow: hidden;
+	margin:2px 0 4px;
+	padding-bottom: 6px;
+	border-bottom:1px solid #4C4C4C;
+}
+.biankuang div{
+	width:100%;
+	height:30px;
+	cursor: pointer;
+	line-height: 30px;
+	margin: 2px 0 4px;
+}
+.biankuang div span{
+	display: block;
+    height: 30px;
+    width: 33.333%;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    float: left;
+}
+.biankuang div span:hover{
+	background: #4C4C4C;	
+	border: 1px solid #4c4c4c;
+	border-radius: 8px;
+	color:#fff;
+	line-height: 25px;
+}
+.biankuang #lineWidth{
+	width:88%;
+	float: left;
+	margin-left: 10px;
+}
+.biankuang #strokeStyle{
+	margin-left: 16px
+}
+.biankuang #fillStyle{
+	margin-left: 16px
+}
+.biankuang div:first-child{
+	position: relative;
+	height:60px;
+}
+.biankuang #sz{
+    position: absolute;
+    width: 24px;
+    height: 20px;
+    right: 4px;
+    top: 5px;
+    text-align: center;
+    line-height: 20px;
+}
+
+/*描边 填充*/
+.sf-box{
+	width:100%;
+	height:auto;
+	overflow: hidden;
+	margin:2px 0 4px;
+	padding-bottom: 6px;
+	border-bottom:1px solid #4C4C4C;
+}
+.sf-box div{
+	width:33.333%;
+	height:30px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 20px;
+	float: left;
+	margin: 2px 9px 4px;
+	cursor: pointer;	
+}
+.sf-box div:hover{
+	background: #4C4C4C;	
+	border: 1px solid #4c4c4c;
+	border-radius: 8px;
+	color:#fff;
+	line-height: 26px;
+}

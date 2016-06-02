@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>画图</title>
+	<link rel="stylesheet" href="./css/palette.css">
+	<link rel="stylesheet" href="./css/iconfont.css">
+	<script src="./js/palette.js"></script>
+	<script src="./js/jquerymin.js"></script>
+	<script src="./js/index.js"></script>	
+	<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+<body>
+	
+	<div class="palette-box">
+		<div class="tools">
+			<div class="head">绘图工具</div>
+			<!-- 新增 保存 撤销 -->
+			<div class="main">
+				<div class="new iconfont" title="新建">&#xe609;</div>
+				<div class="save iconfont" title="保存">&#xe600;</div>
+				<div class="back iconfont" title="撤销">&#xe602;</div>
+			</div>
+			<!-- 矩形  圆形  线 铅笔  多边形 多角形 -->
+			<div class="shape">
+				<div class="iconfont" id="line" title="直线">&#xe608;</div>
+				<div class="iconfont" id="rect" title="矩形">&#xe60f;</div>
+				<div class="iconfont" id="arc" title="圆">&#xe605;</div>
+				<div class="iconfont" id="poly" title="多边形">&#xe601;</div>
+				<div class="iconfont" id="jiao" title="多角形">&#xe604;</div>
+				<div class="iconfont" id="pencil" title="铅笔">&#xe60d;</div>
+			</div>
+			<!-- 线宽range max=100 min=1  线条颜色  填充颜色 -->
+			<div class="biankuang">
+				<div>
+					<span class="iconfont" title="边框">&#xe60e;</span>
+					<input type="range" id="lineWidth" value="1" max=100 min=1>
+					<input type="text" id="sz" value="0">
+				</div>
+				<div>
+					<span class="iconfont" title="边框颜色">&#xe60a;</span>
+					<input type="color" id="strokeStyle" value="#000000">
+				</div>
+				<div>
+					<span class="iconfont" title="填充颜色">&#xe60b;</span>
+					<input type="color" id="fillStyle" value="#000000">
+				</div>
+			</div>
+			<!-- 填充  描边 -->
+			<div class="sf-box">
+				<div class="iconfont" id="stroke" title="描边">&#xe60c;</div>
+				<div class="iconfont" id="fill" title="填充">&#xe606;</div>
+			</div>
+		</div>
+		<div class="canvas-box">
+			<!-- <canvas id="can"></canvas> -->
+			<div class="copy"></div>
+		</div>
+	</div>
+
+</body>
+</html>
